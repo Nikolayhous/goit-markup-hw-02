@@ -7,6 +7,7 @@ ul {
   color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
+  line-height: 31px;
   letter-spacing: 0.03em;
 }
 
@@ -14,6 +15,7 @@ ul {
   color: #000000;
   font-family: Raleway;
   font-size: 26px;
+  line-height: 31px;
   letter-spacing: 0.03em;
 }
 
@@ -26,6 +28,7 @@ ul {
   color: #212121;
   font-family: Roboto;
   font-size: 14px;
+  line-height: 16px;
   letter-spacing: 0.02em;
 }
 
@@ -38,6 +41,7 @@ ul {
   color: #757575;
   font-family: Roboto;
   font-size: 14px;
+  line-height: 16px;
   letter-spacing: 0.02em;
 }
 
@@ -46,83 +50,40 @@ ul {
   color: #2196f3;
 }
 
-/* section main */
-.main {
-  background: #2f303a;
-}
+/* section filter-menu */
 
-.main .title {
-  color: #ffffff;
-  font-family: Roboto;
-  font-size: 44px;
-  line-height: 60px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.main .button {
-  background-color: #2196f3;
-  color: #ffffff;
-  width: 200px;
-  height: 50px;
-  font-family: Roboto;
-  font-size: 16px;
-  letter-spacing: 0.06em;
-}
-
-.main .button:hover,
-.main .button:focus {
-  background: #f07272;
-  color: #ffffff;
-}
-
-/* sectiom about */
-
-.about .title {
-  color: #212121;
-  font-family: Roboto;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.about .definition {
-  color: #757575;
-  font-family: Roboto;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-}
-
-/* sectiom work */
-
-.work .title {
-  color: #212121;
-  font-family: Roboto;
-  font-size: 36px;
-  letter-spacing: 0.03em;
-}
-
-/* sectiom team */
-
-.team .title {
-  color: #212121;
-  font-family: Roboto;
-  font-size: 36px;
-  letter-spacing: 0.03em;
-}
-
-.team .collaborator {
+.filter-menu .item {
   color: #212121;
   font-family: Roboto;
   font-size: 16px;
+  line-height: 26px;
   letter-spacing: 0.03em;
+  border: none;
+  margin-top: 5px;
 }
 
-.team .profession {
+.filter-menu .item:hover,
+.filter-menu .item:focus {
+  background: #2196f3;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+/* section project */
+
+.project .title {
+  color: #212121;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+
+.project .text {
   color: #757575;
   font-family: Roboto;
   font-size: 16px;
+  line-height: 30px;
   letter-spacing: 0.03em;
 }
 
@@ -141,6 +102,7 @@ ul {
   font-family: Roboto;
   font-style: normal;
   font-size: 14px;
+  line-height: 24px;
   letter-spacing: 0.03em;
 }
 
@@ -149,5 +111,6 @@ ul {
   font-family: Roboto;
   font-style: normal;
   font-size: 14px;
+  line-height: 24px;
   letter-spacing: 0.03em;
 }
