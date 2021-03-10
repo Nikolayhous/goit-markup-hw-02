@@ -1,10 +1,20 @@
-ul {
-  list-style: none;
+
+/* переменные css */
+
+:root {
+  --button-hover-color: #2196f3;
+  --title-nav-filter-color:#212121;
+  --text-color:#757575;
+  --footer-bg-color: #2f303a;
 }
 
 body {
   font-family: Roboto;
-  color: #212121;
+  color: var(--title-nav-filter-color);
+}
+
+ul {
+  list-style: none;
 }
 
 /* styles header */
@@ -13,27 +23,27 @@ body {
   text-decoration: none;
 }
 
-.logo-1 {
-  color: #2196f3;
+.logo-text-one {
+  color: var(--button-hover-color);
   font-family: Raleway;
   font-size: 26px;
   letter-spacing: 0.03em;
 }
 
-.logo-2 {
+.logo-text-two {
   color: #000000;
   font-family: Raleway;
   font-size: 26px;
   letter-spacing: 0.03em;
 }
 
-.logo-2:hover,
-.logo-2:hover {
-  color: #2196f3;
+.logo-text-two:hover,
+.logo-text-two:hover {
+  color: var(--button-hover-color);
 }
 
 .site-nav .link {
-  color: #212121;
+  color: var(--title-nav-filter-color);
   font-size: 14px;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -41,11 +51,15 @@ body {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--button-hover-color);
+}
+
+.site-nav .link.current {
+  color: var(--button-hover-color);
 }
 
 .auth-nav .contact {
-  color: #757575;
+  color: var(--text-text-color);
   font-size: 14px;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -53,12 +67,12 @@ body {
 
 .auth-nav .contact:hover,
 .auth-nav .contact:focus {
-  color: #2196f3;
+  color: var(--button-hover-color);
 }
 
 /* section main */
 .main {
-  background: #2f303a;
+  background-color: #2f303a;
 }
 
 .main .title {
@@ -70,7 +84,7 @@ body {
 }
 
 .main .button {
-  background-color: #2196f3;
+  background-color: var(--button-hover-color);
   color: #ffffff;
   width: 200px;
   height: 50px;
@@ -82,13 +96,14 @@ body {
 
 .main .button:hover,
 .main .button:focus {
-  background: #f07272;
+  background-color: #f07272;
   color: #ffffff;
 }
 
 /* sectiom about */
 
 .about .title {
+  color: var(--title-nav-filter-color);
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -96,7 +111,7 @@ body {
 }
 
 .about .definition {
-  color: #757575;
+  color: var(--text-color);
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -104,6 +119,7 @@ body {
 /* sectiom work */
 
 .work .title {
+  color: var(--title-nav-filter-color);
   font-size: 36px;
   letter-spacing: 0.03em;
 }
@@ -111,17 +127,19 @@ body {
 /* sectiom team */
 
 .team .title {
+  color: var(--title-nav-filter-color);
   font-size: 36px;
   letter-spacing: 0.03em;
 }
 
 .team .collaborator {
+  color:  var(--title-nav-filter-color);
   font-size: 16px;
   letter-spacing: 0.03em;
 }
 
 .team .profession {
-  color: #757575;
+  color: var(--text-color);
   font-size: 16px;
   letter-spacing: 0.03em;
 }
@@ -129,14 +147,14 @@ body {
 /* sectiom footer */
 
 .footer {
-  background: #2f303a;
+  background-color: var(--footer-bg-color);
 }
 
 .footer .logo {
   text-decoration: none;
 }
 
-.footer .logo-2 {
+.footer .logo-text-two {
   color: #ffffff;
 }
 
@@ -155,3 +173,45 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+
+
+
+
+/* Page portfolio */
+
+/* section filter-menu */
+
+.filter-menu .item {
+  color: var(--title-nav-filter-color);
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  border: none;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.filter-menu .item:hover,
+.filter-menu .item:focus {
+  background-color: var(--button-hover-color);
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+/* section project */
+
+.project .title {
+  color: var(--title-nav-filter-color);
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+
+.project .text {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
+
