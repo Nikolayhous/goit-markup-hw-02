@@ -4,13 +4,17 @@
 :root {
   --button-hover-color: #2196f3;
   --title-nav-filter-color:#212121;
-  --text-color:#757575;
-  --footer-bg-color: #2f303a;
+  --text-link-color:#757575;
+  --dark-bg-color: #2f303a;
+  --portfolio-bg-filter-color: #f5f4fA;
 }
 
 body {
   font-family: Roboto, sans-serif;
+  background: #ffffff;
   color: var(--title-nav-filter-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 ul {
@@ -29,7 +33,6 @@ ul {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;  
-  letter-spacing: 0.03em;
 }
 
 .logo-text-two {
@@ -38,7 +41,6 @@ ul {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;  
-  letter-spacing: 0.03em;
 }
 
 .logo-text-two:hover,
@@ -49,7 +51,6 @@ ul {
 .site-nav .link {
   color: var(--title-nav-filter-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -65,9 +66,8 @@ ul {
 }
 
 .auth-nav .contact {
-  color: var(--text-text-color);
+  color: var(--text-link-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -80,7 +80,7 @@ ul {
 
 /* section main */
 .main {
-  background-color: #2f303a;
+  background-color: var(--dark-bg-color);
 }
 
 .main .title {
@@ -90,6 +90,7 @@ ul {
   line-height: 1.36; 
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .main .button {
@@ -97,15 +98,15 @@ ul {
   color: #ffffff;
   width: 200px;
   height: 50px;
-  font-family: Roboto;
   font-size: 16px;
+  font-weight: bold;
   letter-spacing: 0.06em;
   cursor: pointer;
 }
 
 .main .button:hover,
 .main .button:focus {
-  background-color: #f07272;
+  background-color: #188ce8;
   color: #ffffff;
 }
 
@@ -113,17 +114,13 @@ ul {
 
 .about .title {
   color: var(--title-nav-filter-color);
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .about .definition {
   color: var(--text-color);
-  font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
 }
 
 /* sectiom work */
@@ -132,7 +129,7 @@ ul {
   color: var(--title-nav-filter-color);
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /* sectiom team */
@@ -141,7 +138,7 @@ ul {
   color: var(--title-nav-filter-color);
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .team .collaborator {
@@ -149,20 +146,18 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
 }
 
 .team .profession {
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
 }
 
 /* sectiom footer */
 
 .footer {
-  background-color: var(--footer-bg-color);
+  background-color: var(--dark-bg-color);
 }
 
 .footer .logo {
@@ -176,18 +171,14 @@ ul {
 .address .map {
   color: #ffffff;
   font-style: normal;
-  font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
 .address .contact {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
-  font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -195,41 +186,49 @@ ul {
 
 /* Page portfolio */
 
-/* section filter-menu */
+/*  filter-menu */
 
-.filter-menu .item {
-  background: #f5f4fA;
+.visually-hidden { 
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.filter-item {
+  background: var(--portfolio-bg-filter-color);
   color: var(--title-nav-filter-color);
   font-size: 16px;
   line-height: 1.6;
   font-weight: 500;
-  letter-spacing: 0.03em;
   border-radius: 4px;
   border: none;
   margin-top: 5px;
   cursor: pointer;
 }
 
-.filter-menu .item:hover,
-.filter-menu .item:focus {
+.filter-item:hover,
+.filter-item:focus {
   background-color: var(--button-hover-color);
   color: #ffffff;
   border-radius: 5px;
 }
 
-/* section project */
+/* project */
 
-.project .title {
+.project-title {
   color: var(--title-nav-filter-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.project .text {
+.project-text {
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
 }
-
