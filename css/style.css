@@ -1,13 +1,25 @@
 
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 /* переменные css */
 
 :root {
-  --button-hover-color: #2196f3;
   --title-nav-filter-color:#212121;
   --text-link-color:#757575;
   --dark-bg-color: #2f303a;
   --portfolio-bg-filter-color: #f5f4fA;
   --hover-focus-color: #ffffff;
+  --button-hover-color: #2196f3;
   --title-footer-color: #ffffff;
 }
 
@@ -17,6 +29,7 @@ body {
   color: var(--title-nav-filter-color);
   font-size: 14px;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
 /* styles header */
@@ -30,7 +43,7 @@ body {
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
-  line-height: 1.2;  
+  line-height: 1.2; 
 }
 
 .logo-text-two {
@@ -38,7 +51,7 @@ body {
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
-  line-height: 1.2;  
+  line-height: 1.2; 
 }
 
 .logo-text-two:hover,
@@ -87,6 +100,7 @@ body {
 /* section main */
 .main {
   background-color: var(--dark-bg-color);
+  outline: solid red;
 }
 
 .main-title {
@@ -97,17 +111,24 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+  width: 700px;
+  padding-top: 200px;
+  margin: 0 auto;
+  outline: solid red;
 }
 
 .main .button {
   background-color: var(--button-hover-color);
   color: #ffffff;
-  width: 200px;
-  height: 50px;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  margin: 30px 800px 200px;
+  outline: solid red;
 }
 
 .main .button:hover,
@@ -120,6 +141,15 @@ body {
 
 .about-items {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about-item {
+  width: 325px;
+  padding: 0 30px;
+  margin-top: 95px;
 }
 
 .about-title {
@@ -135,6 +165,12 @@ body {
 
 /* sectiom work */
 
+.work-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .work-title {
   color: var(--title-nav-filter-color);
   font-size: 36px;
@@ -144,6 +180,10 @@ body {
 
 .work-items {
   list-style: none;
+}
+
+.work-images {
+  padding: 0 30px;
 }
 
 /* sectiom team */
@@ -156,7 +196,14 @@ body {
 }
 
 .team-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   list-style: none;
+}
+
+.team-item {
+  padding: 0 30px;
 }
 
 .team-collaborator {
@@ -260,3 +307,4 @@ body {
   font-size: 16px;
   line-height: 1.87;
 }
+
